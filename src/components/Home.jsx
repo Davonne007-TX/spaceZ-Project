@@ -9,14 +9,14 @@ export default function Home() {
           SpaceZ
         </h1>
 
-        <nav className="flex mt-5 font-orbitron ml-10 gap-10 text-sm text-white list-none">
-          <li>Eagle7</li>
-          <li>Eagle Light</li>
-          <li>Phoenix10</li>
-          <li>Mothership</li>
-          <li>Spaceflight</li>
-          <li>Mars Mission</li>
-          <li>Beyond</li>
+        <nav className="flex mt-5 font-orbitron ml-10 gap-10 text-sm text-white list-none cursor-pointer">
+          <li className="hover:underline">Eagle7</li>
+          <li className="hover:underline">Eagle Light</li>
+          <li className="hover:underline">Phoenix10</li>
+          <li className="hover:underline">Mothership</li>
+          <li className="hover:underline">Spaceflight</li>
+          <li className="hover:underline">Mars Mission</li>
+          <li className="hover:underline">Beyond</li>
         </nav>
       </header>
     </div>
