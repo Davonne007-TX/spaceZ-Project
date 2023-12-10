@@ -1,6 +1,12 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
+
+  const goHome = () => {
+    navigate("/");
+  };
+
   const capitalizeLetters = (word) => {
     return word.toUpperCase();
   };
@@ -17,7 +23,10 @@ export default function Header() {
   return (
     <>
       <header className="flex flex-row w-full">
-        <h1 className="text-3xl text-white font-bold font-orbitron p-4 ml-40">
+        <h1
+          className="text-3xl text-white font-bold font-orbitron p-4 ml-40 cursor-pointer"
+          onClick={goHome}
+        >
           SpaceZ
         </h1>
 
