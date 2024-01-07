@@ -1,3 +1,12 @@
+import Header from "./Header";
+
 export default function Eagle7() {
-  return <div>Eagle7</div>;
+  return (
+    <div
+      className="h-screen bg-cover bg-no-repeat"
+      style={{ backgroundImage: "url('images/launch.jpg')" }}
+    >
+      <Header />
+    </div>
+  );
 }
