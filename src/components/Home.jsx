@@ -7,8 +7,11 @@ export default function Home() {
     <>
       <main className="🚀">
         <section
-          className="h-screen bg-cover bg-no-repeat"
-          style={{ backgroundImage: "url('images/launch.jpg')" }}
+          className="w-full"
+          style={{
+            backgroundImage: "url('/images/launch.jpg')",
+            backgroundSize: "cover",
+          }}
         >
           <Header />
           <Missions
@@ -17,35 +20,19 @@ export default function Home() {
             watch="Live 2/16/24"
           />
         </section>
-        <section className="relative">
-          <img
-            src="images/space.jpg"
-            className="w-full h-screen absolute"
-            alt="Space, Layer between Earths Atmosphere and Space"
+        <section
+          className="w-full"
+          style={{
+            backgroundImage: "url('/images/rocket.jpg')",
+            backgroundSize: "cover",
+          }}
+        >
+          <Missions
+            launch="What's New"
+            name="To The Stars Mission"
+            watch="Learn More"
           />
-          <div className="absolute">
-            <Missions
-              launch="What's New"
-              name="To The Stars Mission"
-              watch="Learn More"
-            />
-          </div>
         </section>
-
-        {/* <section className="relative ">
-          <img
-            src="images/sunset.jpg"
-            className="w-full h-screen absolute"
-            alt="Rocket"
-          />
-          <div className="absolute">
-            <Missions
-              launch="What's New"
-              name="To The Stars Mission"
-              watch="Learn More"
-            />
-          </div>
-        </section> */}
       </main>
     </>
   );
