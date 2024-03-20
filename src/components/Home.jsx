@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header";
 import Missions from "./Missions";
 
@@ -21,9 +20,37 @@ export default function Home() {
           />
         </section>
         <section
-          className="w-full"
+          className="w-full flex mt-0"
           style={{
             backgroundImage: "url('/images/rocket.jpg')",
+            backgroundSize: "cover",
+          }}
+        >
+          <Missions
+            launch="What's New"
+            name="To The Stars Mission"
+            watch="Learn More"
+          />
+        </section>
+
+        <section
+          className="w-full flex mt-0"
+          style={{
+            backgroundImage: "url('/images/eclipse.jpg')",
+            backgroundSize: "cover",
+          }}
+        >
+          <Missions
+            launch="What's New"
+            name="To The Stars Mission"
+            watch="Learn More"
+          />
+        </section>
+
+        <section
+          className="section-image"
+          style={{
+            backgroundImage: "url('/images/rocket2.jpg')",
             backgroundSize: "cover",
           }}
         >

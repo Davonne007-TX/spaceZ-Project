@@ -6,3 +6,7 @@
 .launch {
   margin-top: 600px;
 }
+
+.section-image {
+  @apply w-full flex mt-0;
+}
