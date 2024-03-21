@@ -16,7 +16,7 @@ export default function Home() {
           <Missions
             launch="Upcoming Launch"
             name="USSA-76 MISSION"
-            watch="Live 2/16/24"
+            watch="Live 4/16/24"
           />
         </section>
         <section
@@ -27,9 +27,9 @@ export default function Home() {
           }}
         >
           <Missions
-            launch="What's New"
+            launch="What's The Latest"
             name="To The Stars Mission"
-            watch="Learn More"
+            watch="Rewatch"
           />
         </section>
 
@@ -41,8 +41,8 @@ export default function Home() {
           }}
         >
           <Missions
-            launch="What's New"
-            name="To The Stars Mission"
+            launch="Upcoming News"
+            name="April 8th Solar Eclipse in the US"
             watch="Learn More"
           />
         </section>
@@ -55,8 +55,8 @@ export default function Home() {
           }}
         >
           <Missions
-            launch="What's New"
-            name="To The Stars Mission"
+            launch="Looking into the future"
+            name="Mission to Mars"
             watch="Learn More"
           />
         </section>
