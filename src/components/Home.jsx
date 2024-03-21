@@ -6,10 +6,9 @@ export default function Home() {
     <>
       <main className="🚀">
         <section
-          className="w-full"
+          className="w-full flex bg-cover bg-center md:bg-contain"
           style={{
             backgroundImage: "url('/images/launch.jpg')",
-            backgroundSize: "cover",
           }}
         >
           <Header />
@@ -20,10 +19,9 @@ export default function Home() {
           />
         </section>
         <section
-          className="w-full flex mt-0"
+          className="w-full flex mt-0 bg-cover bg-center md:bg-contain"
           style={{
             backgroundImage: "url('/images/rocket.jpg')",
-            backgroundSize: "cover",
           }}
         >
           <Missions
@@ -34,10 +32,9 @@ export default function Home() {
         </section>
 
         <section
-          className="w-full flex mt-0"
+          className="w-full flex mt-0 bg-cover bg-center md:bg-contain"
           style={{
             backgroundImage: "url('/images/eclipse.jpg')",
-            backgroundSize: "cover",
           }}
         >
           <Missions
@@ -48,10 +45,9 @@ export default function Home() {
         </section>
 
         <section
-          className="section-image"
+          className="w-full section-image bg-cover bg-center md:bg-contain"
           style={{
             backgroundImage: "url('/images/rocket2.jpg')",
-            backgroundSize: "cover",
           }}
         >
           <Missions

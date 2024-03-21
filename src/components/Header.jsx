@@ -1,4 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
+import MobileNav from "./MobileNav";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -24,13 +25,13 @@ export default function Header() {
     <>
       <header className="flex flex-row w-full">
         <h1
-          className="text-3xl text-white font-bold font-orbitron p-4 ml-40 cursor-pointer"
+          className="text-3xl text-white font-bold font-orbitron p-4 lg:ml-40 cursor-pointer"
           onClick={goHome}
         >
           SpaceZ
         </h1>
 
-        <nav className="flex mt-5 font-orbitron ml-10 gap-10 text-sm text-white list-none cursor-pointer">
+        <nav className="flex flex-col md:flex-row lg:flex-row mt-5 font-orbitron ml-10 gap-10 text-sm text-white list-none cursor-pointer">
           {navItems.map((item, index) => (
             <li key={index} className="hover:underline">
               <Link to={`/${item.toLowerCase()}`}>
@@ -39,6 +40,7 @@ export default function Header() {
             </li>
           ))}
         </nav>
+        <MobileNav navItems={navItems} capitalizeLetters={capitalizeLetters} />
       </header>
     </>
   );
