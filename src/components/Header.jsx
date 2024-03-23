@@ -24,23 +24,27 @@ export default function Header() {
   return (
     <>
       <header className="flex flex-row w-full">
-        <h1
-          className="text-3xl text-white font-bold font-orbitron p-4 lg:ml-40 cursor-pointer"
-          onClick={goHome}
-        >
-          SpaceZ
-        </h1>
-
-        <nav className="flex flex-col md:flex-row lg:flex-row mt-5 font-orbitron ml-10 gap-10 text-sm text-white list-none cursor-pointer">
-          {navItems.map((item, index) => (
-            <li key={index} className="hover:underline">
-              <Link to={`/${item.toLowerCase()}`}>
-                {capitalizeLetters(item)}
-              </Link>
-            </li>
-          ))}
-        </nav>
-        <MobileNav navItems={navItems} capitalizeLetters={capitalizeLetters} />
+        <div className="mt-8 ml-10 lg:ml-80  lg:mr-0 flex">
+          <h1
+            className="text-3xl text-white font-bold font-orbitron lg:ml-40 cursor-pointer"
+            onClick={goHome}
+          >
+            SpaceZ
+          </h1>
+          <nav className="flex flex-col mt-2 md:flex-row lg:flex-row font-orbitron ml-10 gap-10 text-sm text-white list-none cursor-pointer">
+            {navItems.map((item, index) => (
+              <li key={index} className="hover:underline">
+                <Link to={`/${item.toLowerCase()}`}>
+                  {capitalizeLetters(item)}
+                </Link>
+              </li>
+            ))}
+          </nav>
+          {/* <MobileNav
+            navItems={navItems}
+            capitalizeLetters={capitalizeLetters}
+          /> */}
+        </div>
       </header>
     </>
   );

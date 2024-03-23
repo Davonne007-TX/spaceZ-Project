@@ -20,7 +20,7 @@ export default function Home() {
           />
         </section>
         <section
-          className="w-full flex mt-0"
+          className="w-full flex"
           style={{
             backgroundImage: "url('/images/rocket.jpg')",
             backgroundSize: "cover",
@@ -34,7 +34,7 @@ export default function Home() {
         </section>
 
         <section
-          className="w-full flex mt-0"
+          className="w-full flex"
           style={{
             backgroundImage: "url('/images/eclipse.jpg')",
             backgroundSize: "cover",
@@ -48,7 +48,7 @@ export default function Home() {
         </section>
 
         <section
-          className="section-image w-full "
+          className="section-image w-full"
           style={{
             backgroundImage: "url('/images/mars.jpg')",
             backgroundSize: "cover",
