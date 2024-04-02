@@ -1,5 +1,6 @@
 import Header from "./Header";
 import Missions from "./Missions";
+import Footer from "./Footer";
 
 export default function Home() {
   return (
@@ -60,6 +61,7 @@ export default function Home() {
             watch="Learn More"
           />
         </section>
+        <Footer />
       </main>
     </>
   );
