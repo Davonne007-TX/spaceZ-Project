@@ -10,7 +10,7 @@ export default function MobileNav({ navItems, capitalizeLetters }) {
   }
 
   return (
-    <section className="ml-20 flex flex-row font-orbitron mt-2 text-white cursor-pointer">
+    <section className="flex font-orbitron mt-2 mr-20 text-white cursor-pointer text-sm">
       <Link to="/shop" className="mr-4 hover:underline">
         Shop
       </Link>

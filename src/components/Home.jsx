@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <main className="🚀">
         <section
-          className="w-full"
+          className="section-image"
           style={{
             backgroundImage: "url('/images/launch.jpg')",
             backgroundSize: "cover",
@@ -20,7 +20,7 @@ export default function Home() {
           />
         </section>
         <section
-          className="w-full flex"
+          className="section-image"
           style={{
             backgroundImage: "url('/images/rocket.jpg')",
             backgroundSize: "cover",
@@ -34,7 +34,7 @@ export default function Home() {
         </section>
 
         <section
-          className="w-full flex"
+          className="section-image"
           style={{
             backgroundImage: "url('/images/eclipse.jpg')",
             backgroundSize: "cover",
@@ -48,7 +48,7 @@ export default function Home() {
         </section>
 
         <section
-          className="section-image w-full"
+          className="section-image"
           style={{
             backgroundImage: "url('/images/mars.jpg')",
             backgroundSize: "cover",

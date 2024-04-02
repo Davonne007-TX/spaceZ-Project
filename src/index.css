@@ -8,5 +8,5 @@
 }
 
 .section-image {
-  @apply w-full flex mt-0;
+  @apply w-full flex flex-col;
 }

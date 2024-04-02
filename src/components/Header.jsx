@@ -23,8 +23,8 @@ export default function Header() {
   ];
   return (
     <>
-      <header className="flex flex-row w-full">
-        <div className="mt-8 ml-10 lg:ml-80  lg:mr-0 flex">
+      <header className=" w-full">
+        <div className="mt-8 flex justify-between">
           <h1
             className="text-3xl text-white font-bold font-orbitron lg:ml-40 cursor-pointer"
             onClick={goHome}
@@ -40,10 +40,10 @@ export default function Header() {
               </li>
             ))}
           </nav>
-          {/* <MobileNav
+          <MobileNav
             navItems={navItems}
             capitalizeLetters={capitalizeLetters}
-          /> */}
+          />
         </div>
       </header>
     </>

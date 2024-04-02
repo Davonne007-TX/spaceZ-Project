@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         orbitron: "'Orbitron', san-serif",
       },
+      animation: {
+        appear: "appear 2s ease-in-out",
+      },
     },
   },
   plugins: [],
