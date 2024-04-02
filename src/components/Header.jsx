@@ -26,12 +26,12 @@ export default function Header() {
       <header className=" w-full">
         <div className="mt-8 flex justify-between">
           <h1
-            className="text-3xl text-white font-bold font-orbitron lg:ml-40 cursor-pointer"
+            className="text-4xl text-white font-bold font-orbitron cursor-pointer ml-20"
             onClick={goHome}
           >
             SpaceZ
           </h1>
-          <nav className="flex flex-col mt-2 md:flex-row lg:flex-row font-orbitron ml-10 gap-10 text-sm text-white list-none cursor-pointer">
+          <nav className="flex flex-col mt-2 md:flex-row lg:flex-row font-orbitron ml-10 gap-10 text-md text-white list-none cursor-pointer">
             {navItems.map((item, index) => (
               <li key={index} className="hover:underline">
                 <Link to={`/${item.toLowerCase()}`}>
