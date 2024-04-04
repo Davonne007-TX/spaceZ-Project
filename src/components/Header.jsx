@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import MobileNav from "./MobileNav";
+import SideNav from "./SideNav";
 
 export default function Header() {
   const navigate = useNavigate();
@@ -40,10 +40,7 @@ export default function Header() {
               </li>
             ))}
           </nav>
-          <MobileNav
-            navItems={navItems}
-            capitalizeLetters={capitalizeLetters}
-          />
+          <SideNav navItems={navItems} capitalizeLetters={capitalizeLetters} />
         </div>
       </header>
     </>
