@@ -16,7 +16,7 @@ export default function MobileNav({ navItems, capitalizeLetters }) {
       </Link>
 
       <div onClick={test} className="relative ">
-        <FaBars />
+        <FaBars className="mt-1" />
       </div>
     </section>
   );
