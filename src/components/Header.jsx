@@ -35,7 +35,7 @@ export default function Header() {
             className="text-4xl text-white font-bold font-orbitron cursor-pointer"
             onClick={goHome}
           >
-            SpaceZ
+            Space-Z
           </h1>
 
           <button
